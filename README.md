@@ -144,7 +144,52 @@ Sempre use desta forma:
 | Muito lento                       | Use apenas apps leves e evite muitos processos em segundo plano        |
 
 ---
+**Sim.** Aqui está o texto pronto para colar no README (tanto do GDeskEx normal como do Light):
 
+---
+
+### Adicionar esta secção no README:
+
+```markdown
+## ⚠️ Problema comum: Download automático do WSA falha
+
+O comando `wsa-install` tenta baixar o WSABuilds automaticamente, mas **muitas vezes falha** com o erro:
+
+> Pedido abortado : A ligação terminou inesperadamente  
+> ou  
+> O sistema não conseguiu localizar o ficheiro especificado
+
+### Por que isso acontece?
+- O ficheiro do WSA tem mais de 700 MB
+- O `Invoke-WebRequest` do PowerShell costuma falhar em downloads grandes
+- Internet instável ou limite do GitHub
+
+### Solução recomendada (mais estável):
+
+1. Acesse a página oficial do WSABuilds:
+   - **Windows 11:** https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_8
+   - **Windows 10:** https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0_LTS_8
+
+2. Em **Assets**, baixe o ficheiro que contém:
+   ```
+   with-magisk-30.6(30600)-stable-GApps-13.0
+   ```
+
+3. Extraia com **7-Zip**
+
+4. Dentro da pasta extraída, execute o ficheiro **Run.bat**
+
+5. Depois de instalar, volte ao GDeskEx e use:
+   ```powershell
+   .\gdeskex.ps1 wsa-status
+   ```
+
+> **Nota:** O download manual é a forma mais confiável de instalar o WSA no momento.
+```
+
+---
+
+Quer que eu te monte a versão completa do README já com essa secção incluída?
 ## Autor
 
 Criado por **Elves Guilande** – GTSXAI
