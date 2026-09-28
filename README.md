@@ -53,6 +53,7 @@ Sempre use desta forma:
 
 ```powershell
 .\gdeskex-light.ps1 wsa-light
+.\gdeskex-light.ps1 wsa-light-install
 .\gdeskex-light.ps1 wsa-status
 .\gdeskex-light.ps1 install C:\Downloads\app.apk
 ```
@@ -67,6 +68,7 @@ Sempre use desta forma:
 |----------------------|------------------------------------------------|
 | `wsa-light`          | Aplica todas as otimizações do modo Light      |
 | `wsa-status`         | Mostra status do WSA + quantidade de apps      |
+| `wsa-install`        | faz o download do WSA                          |
 | `wsa-memory [MB]`    | Define limite de memória                       |
 | `wsa-restart`        | Reinicia o WSA                                 |
 
@@ -87,6 +89,9 @@ Sempre use desta forma:
 ```powershell
 # Aplicar o modo Light (obrigatório na primeira vez)
 .\gdeskex-light.ps1 wsa-light
+
+# instala o WSA
+.\gdeskex.ps1 wsa-install
 
 # Ver status e quantos apps estão instalados
 .\gdeskex-light.ps1 wsa-status
