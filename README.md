@@ -144,9 +144,6 @@ Sempre use desta forma:
 | Muito lento                       | Use apenas apps leves e evite muitos processos em segundo plano        |
 
 ---
-**Sim.** Aqui está o texto pronto para colar no README (tanto do GDeskEx normal como do Light):
-
----
 
 ### Adicionar esta secção no README:
 
