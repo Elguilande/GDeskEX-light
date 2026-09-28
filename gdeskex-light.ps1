@@ -297,6 +297,7 @@ function Show-WSAStatus {
         Write-ColorOutput "Instalado: NÃO" "Red"
     }
 }
+# ========== FUNCOES DO INSTALADOR WSA ==========
 function Install-WSABuilds {
     Write-ColorOutput "=== Instalação do WSABuilds (Modo Light) ===" "Cyan"
     Write-ColorOutput "Esta versão é experimental e limitada a 1.5 GB de RAM." "Yellow"
